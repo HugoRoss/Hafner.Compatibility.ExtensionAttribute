@@ -13,12 +13,17 @@ Usage:
         <Nullable>enable</Nullable>
       </PropertyGroup>
 
-      <ItemGroup Condition="$(FrameworksLackingExtensionAttribute.Contains('|$(TargetFramework)|'))">
+      <!-- Replace '#' through '$'! -->
+      <ItemGroup Condition="#(FrameworksLackingExtensionAttribute.Contains('|#(TargetFramework)|'))">
         <PackageReference Include="Hafner.Compatibility.ExtensionAttribute">
-          <Version>1.0.0</Version>
+          <Version>1.0.2</Version>
         </PackageReference>
       </ItemGroup>
 
     </Project>
 
 Above XML is a Visual Studio 2022 C# project file (*.csproj) that targets all the frameworks from .NET 2.0 to .NET 6.0 for the .NET flavors '.NET Framework', '.NET Core' and '.NET Standard'.
+
+**Watch out: If you copy/paste above snipet you need to replace the '#' signs through '$' signs.**
+
+I had to check it in like this as otherwise the condition got interpreted, sorry about that.
