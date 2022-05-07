@@ -20,7 +20,7 @@
     <!--    1.2.3  =>  1.2.4  if no interface changes have been performed (patch, bug-fix) -->
     <!--    1.2.3  =>  1.3.0  if new interfaces have been added (feature release) -->
     <!--    1.2.3  =>  2.0.0  if existing interfaces have been modified (breaking changes) -->
-    <Version>1.0.2</Version>
+    <Version>1.0.2.0</Version>
     <!-- Set to <major>.<minor>.0.0 of the <Version> element -->
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <!-- Set to <major>.<minor>.<patch>.0 of the <Version> element -->
