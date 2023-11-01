@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright © 2022 Christoph Hafner
+Copyright © 2022 - 2023 Christoph Hafner
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

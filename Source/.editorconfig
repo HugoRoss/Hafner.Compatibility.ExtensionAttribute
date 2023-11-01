@@ -126,6 +126,9 @@ dotnet_diagnostic.IDE0046.severity = none
 # IDE0053: Use expression body for lambda expressions
 dotnet_diagnostic.IDE0053.severity = silent
 
+# IDE0090: 'new' expression can be simplified
+dotnet_diagnostic.IDE0090.severity = none
+
 # DV2002: Class 'xxx' is not mapped to any Dependency Validation diagram.
 dotnet_diagnostic.DV2002.severity = none
 
@@ -478,9 +481,9 @@ csharp_indent_switch_labels = true
 csharp_indent_labels = no_change
 
 # Prefer type over "var"
-csharp_style_var_for_built_in_types = false:silent
-csharp_style_var_when_type_is_apparent = false:silent
-csharp_style_var_elsewhere = false:silent
+csharp_style_var_for_built_in_types = false:suggestion
+csharp_style_var_when_type_is_apparent = false:suggestion
+csharp_style_var_elsewhere = false:suggestion
 
 # Prefer method-like constructs to have a block body
 csharp_style_expression_bodied_methods = false:suggestion
@@ -539,7 +542,7 @@ csharp_space_between_parentheses = false
 csharp_space_between_square_brackets = false
 
 # Using preferences
-csharp_using_directive_placement = outside_namespace:silent
+csharp_using_directive_placement = inside_namespace:silent
 
 # Blocks are allowed
 csharp_prefer_braces = true:silent
